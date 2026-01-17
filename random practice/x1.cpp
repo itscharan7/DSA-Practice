@@ -3,15 +3,28 @@ using namespace std;
 
 int largestelement(int arr[],int n){
     int max=arr[0];
+    int secondlargest=arr[0];
     for(int i=0;i<n;i++){
         if(arr[i]>max){
             max=arr[i];
         }
-    
-    }
-    return max;
+        if(arr[i]>secondlargest&&arr[i]<max){
+            secondlargest=arr[i];
+        }
 
-}
+    
+
+    }
+    
+   return secondlargest;
+
+        
+    }
+
+
+    
+
+
 
 
 int main(){
@@ -26,4 +39,7 @@ int main(){
    cout<< largestelement(arr,n);
 return 0;
 
+
+
+    
 }
