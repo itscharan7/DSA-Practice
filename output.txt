@@ -1,1 +1,0 @@
-Enter number of elements: Enter elements: Enter target: Indices: 0 4
